@@ -35,10 +35,10 @@ img {
 
 h2 {
 	color: white;
-	margin: 1rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	font-size: 1.3rem;
+	/* margin: 1rem; */
+	/* padding-left: 3rem;
+	padding-right: 3rem; */
+	font-size: 2rem;
 	font-family: 'Inter', sans-serif;
 	font-weight: bold;
 }
@@ -51,8 +51,8 @@ p {
 	color: hsla(0, 0%, 100%, 0.6);
 	letter-spacing: 0.1rem;
 	font-size: 0.8rem;
-	padding-right: 1.4rem;
-	padding-left: 1.4rem;
+	/* padding-right: 1.4rem;
+	padding-left: 1.4rem; */
 	font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -76,14 +76,13 @@ h4 {
 @media (min-width: 775px) {
 	.contenedor {
 		border-radius: 1rem;
-		margin: 5rem;
+		margin: 2rem;
 	}
 
 	.imagen {
 		display: flex;
 		flex-direction: row-reverse;
 		align-items: center;
-		text-align: center;
 		height: 25rem;
 		border-radius: 1rem;
 	}
@@ -91,13 +90,13 @@ h4 {
 	body {
 		display: flex;
 		align-items: center;
-		text-align: center;
 		align-content: center;
 		align-self: center;
 		height: 100vh;
 	}
 
 	.foto {
+		border-radius: 0 1rem 1rem 0;
 		width: 50%;
 	}
 
@@ -110,11 +109,15 @@ h4 {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		padding: 3rem;
 		width: 50%;
 	}
 
 	.estadisticas {
 		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		text-align: left;
 	}
 
 	h2 {
@@ -126,8 +129,8 @@ h4 {
 	}
 
 	div {
-		margin: 2.5rem;
-		width: 1rem;
+		/* margin: 2.5rem;
+		width: 1rem; */
 	}
 
 	h3 {
@@ -142,5 +145,19 @@ h4 {
 @media (min-width: 1000px) {
 	.contenedor {
 		margin: 10rem;
+	}
+
+	.estadisticas {
+		width: 70%;
+		margin-top: 2rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+		width: 90%;
+	}
+
+	p {
+		width: 80%;
 	}
 }
